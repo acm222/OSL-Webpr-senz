@@ -106,7 +106,21 @@ nav a {
         .image2 {
             width: 100%;
             height: auto;
-        }
+	    object-fit: cover;
+
+        @media (min-width: 768px) {
+  .image2 {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .image2 {
+    display: none;
+  }
+}        
+	
+	}
         .text2 {
             width: 50%;
             margin: 0;
